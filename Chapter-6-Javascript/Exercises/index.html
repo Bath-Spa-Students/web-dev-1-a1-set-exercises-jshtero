@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petrol Calculator</title>
+  <!-- This line links the external CSS file "style.css" to the HTML file -->
+  <link href = "style.css" rel = "stylesheet">
+</head>
+<body>
+  <!-- This div element contains the calculator form -->
+  <div class="calculator">
+    <!-- This label element is associated with the first input field and provides context for the user -->
+    <label for="petrolCost">Cost of Petrol per Liter:</label>
+    <!-- This input field is of type "number" and allows the user to input the cost of petrol per liter -->
+    <input type="number" id="petrolCost" step="0.01" min="0.01" value="1.72">
+    <!-- This label element is associated with the second input field and provides context for the user -->
+    <label for="litersPurchased">Liters Purchased:</label>
+    <!-- This input field is of type "number" and allows the user to input the number of liters purchased -->
+    <input type="number" id="litersPurchased" step="0.01" min="0" value="0">
+    <!-- This button element has an id of "calculateBtn" and triggers the JavaScript function to calculate the total cost -->
+    <button id="calculateBtn">Calculate Total Cost</button>
+    <!-- This paragraph element has an id of "totalCost" and will display the calculated total cost -->
+    <p id="totalCost"></p>
+  </div>
+  <!-- This div element has a class of "images" and is used to display the background image -->
+  <div class = "images"></div>
+ <!-- This script tag references the external JavaScript file "index.js" -->
+  <script src="index.js"></script>
+</body>
+</html>
